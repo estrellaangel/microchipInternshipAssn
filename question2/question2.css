@@ -1,0 +1,100 @@
+
+/* WHOLE PAGE*/
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+    /* BODY STYLING */
+
+    body{
+        background-color: #2E1C23;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px; 
+        cursor: default;
+        font-weight: normal;
+    }
+
+        /* TABLE FORMATTING */
+
+            /* TABLE TITLE */
+
+            .tblTitle{
+                text-align: center;
+                text-decoration: underline;
+                color: red;  /* CODE TO MAKE TEXT RED */
+            }
+
+            /* TABLE CONTENT */
+
+            table{
+                border-collapse: collapse;
+                border: 5px solid #E3B361;
+                background-color: #F9F5E3;
+                padding: 5px;
+            }
+
+                /* ROW */
+
+                tr{
+                    border-collapse: collapse;
+                    border: 5px solid #E3B361;
+                    padding: 5px;
+                }
+
+                /* COL */
+
+                th{
+                    border-collapse: collapse;
+                    border: 5px solid #E3B361;
+                    padding: 5px;
+                }
+
+                /* TEXT WEIGHT */
+
+                    .left{
+                        font-weight: normal;
+                    }
+
+                    .right{
+                        font-weight: normal;
+                    } 
+
+        /* NAVIGATION BUTTONS */
+
+        .navBtns{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .singleNavBtn {
+            margin-top: 1rem;
+            padding: 10px;
+            background-color: #D74452;
+            border-radius: 16px;
+            color: #F9F5E3;
+            text-decoration: none;
+        }
+
+        /* HOVER */
+        
+        .singleNavBtn:hover{
+            background-color: #ff7575;
+        }
+
+
+
+/* BOLDING TEXT */
+.bold{
+    font-weight: bold;
+}

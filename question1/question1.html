@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='author' content='Estrella Angel'>
+    <meta name='description' content='Microchip Internship Interview Project Question 1'>
+    <link rel='shortcut icon' href='' type='image/x-icon'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='question1.css'>
+</head>
+    <body>
+        <div class="allElements">
+             <h1 class="title">Question 1</h1>
+
+            <div class="main" onload="addToArray()">
+                    <!-- Project Description -->
+                <div class="projDescription">
+
+                    <h2 class="projDescriptionTitle">Project Description</h2>
+                        
+                        <!-- Content TABLE -->
+                        <table class="projDescriptionTable">
+                            <!-- first row - explaination sentence -->
+                            <tr class="tableRow row1">
+                                <th class="leftVisual"></th>
+                                <th class="rightText">In language of choice (JS), please solve the following problem.</th>
+                            </tr>
+
+                            <!-- second row - (1) BUTTON and explaination sentence -->
+                            <tr class="tableRow row2">
+                                <th class="leftVisual"></th>
+                                <th class="rightText">Add the following states as string types to an Array, List, or other collection in this order.</th>
+                            </tr>
+                        
+                            <!-- third row - explaination lsit -->
+                            <tr class="tableRow row3">
+                                <th class="leftVisual"></th>
+                                <th class="rightText">
+                                    <ul>
+                                        <li>Arizona</li>
+                                        <li>Alaska</li>
+                                        <li>Hawaii</li>
+                                        <li>Georgia</li>
+                                        <li>West Virginia</li>
+                                        <li>Alabama</li>
+                                        <li>Ohio</li>
+                                        <li>North Carolina</li>
+                                        <li>Rhode Island</li>
+                                        <li>Florida</li>
+                                        <li>California</li>
+                                    </ul>
+                                </th>
+                            </tr>
+
+                            <!-- fourth row - explaination sentence -->
+                            <tr class="tableRow row4">
+                                <th class="leftVisual"></th>
+                                <th class="rightText">Using a “for” or “foreach” loop, please write code for the following:</th>
+                            </tr>
+
+                            <!-- fifth row - (2) BUTTON and explaination sentence -->
+                            <tr class="tableRow row5 hoverText clickableRow 1" onclick="displayAllStates('displayAllStates')">
+                                <th class="leftVisual clickableCell"><div class="numberOptionLeftDisplay">1</div></th>
+                                <th class="rightText" id="displayAllStates">Print each state name to screen.</th>
+                            </tr>                    
+
+                            <!-- sixth row - (3) BUTTON and explaination sentence -->
+                            <tr class="tableRow row6 hoverText clickableRow 2" onclick="findTwoWords('findTwoWords')">
+                                <th class="leftVisual clickableCell"><div class="numberOptionLeftDisplay">2</div></th>
+                                <th class="rightText" id="findTwoWords">Using programming logic, print each state name that is two words.</th>
+                            </tr> 
+
+                            <!-- seventh row - (4) BUTTON and explaination sentence -->
+                            <tr class="tableRow row7 hoverText clickableRow 3" onclick="nameLength('nameLength')">
+                                <th class="leftVisual clickableCell"><div class="numberOptionLeftDisplay">3</div></th>
+                                <th class="rightText" id="nameLength">Using programming logic, print the length of each string to the screen.</th>
+                            </tr> 
+
+                            <!-- eigth row - (5) BUTTON and explaination sentence -->
+                            <tr class="tableRow row8 hoverText clickableRow 4" onclick="alphabetizeStates('alphabetizeStates')" >
+                                <th class="leftVisual clickableCell"><div class="numberOptionLeftDisplay">4</div></th>
+                                <th class="rightText" id="alphabetizeStates">Using programming logic, order the states in alphabetical order and print them to screen.</th>
+                            </tr> 
+                        </table>
+                        <!-- Table End -->
+
+                    </div>
+                    <!-- Project Description End -->
+
+                    <!-- Solution -->
+                    <div class="solutionArea">
+                        <div class="solutionContent">
+
+                            <!-- Solution Bar -->
+                            <div class="titleArea">
+                                <div class="solutionAreaTitle">Solution</div>
+                                <ul class="solutionOptions">
+                                    <li class="1 hoverNum functionNum" onclick="displayAllStates()">1</li>
+                                    <li class="2 hoverNum functionNum" onclick="findTwoWords()">2</li>
+                                    <li class="3 hoverNum functionNum" onclick="nameLength()">3</li>
+                                    <li class="4 hoverNum functionNum" onclick="alphabetizeStates()">4</li>
+                                </ul>
+                            </div>
+                            <!-- Solution Bar End -->
+
+                            <!-- Solution Answer End-->
+                            <div class="solution" id="solution" onload="clearSolution()">
+                                <div class="solutionAnswer" id="solutionAnswer"></div>
+                            </div>
+                             <!-- Solution Answer End -->
+                        </div>
+                    </div>
+                
+                </div>
+
+            <div class="navBtns">
+                    <a class="singleNavBtn" href="../index.html">Back to Home Page</a>
+                    <a class="singleNavBtn" href="../question2/question2.html">Question 2</a>
+            </div>
+        </div>
+        <script src='question1.js'></script>
+    </body>
+</html>
